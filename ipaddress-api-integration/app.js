@@ -3,7 +3,7 @@
 async function getIpAddress(ipAddress) {
       // const ipAddress = "41.190.14.147";
       const apiKey = "a3383d8e620cb26f5129f2fb1cea2edf";
-      const response = await fetch("http://api.ipstack.com/" + ipAddress + "?access_key=" + apiKey );
+      const response = await fetch("https://api.ipstack.com/" + ipAddress + "?access_key=" + apiKey );
       const data = await response.json();
       console.log(data);
       const { type, city, continent_name, country_name, zip, location } = data;
